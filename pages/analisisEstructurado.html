@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastelería FLOREVEN - ADS</title>
+    
+    <!-- Bootstrap CSS vía CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <style>
+        :root {
+            --pastel-cafe: #5c3a21;
+            --pastel-rosa: #f3a3b7;
+            --pastel-beige-fondo: #f5efe6;
+            --pastel-crema-header: #fffaf5;
+        }
+        body { background-color: var(--pastel-beige-fondo); }
+        .nav-link { color: var(--pastel-cafe) !important; font-size: 1.05rem; transition: all 0.2s ease; padding: 0.5rem 1rem !important; }
+        .nav-link:hover { color: var(--pastel-rosa) !important; }
+        .bg-pasteleria-header { background-color: var(--pastel-crema-header) !important; }
+        .marca-floreven { letter-spacing: 1px; text-shadow: 1px 1px 2px rgba(92, 58, 33, 0.1); white-space: nowrap; }
+        .button-pedido:hover { background-color: #5c3a21 !important; transform: translateY(-2px); }
+        .dropdown-item:hover { background-color: var(--pastel-rosa) !important; color: white !important; }
+    </style>
+</head>
+<body>
+
+    <header class="bg-pasteleria-header border-bottom sticky-top shadow-sm">
+        <div class="container">
+            <!-- Fila superior: Logo y Usuario -->
+            <div class="row align-items-center pt-3 pb-2 border-bottom border-light">
+                <div class="col-3 text-start">
+                    <button class="btn border-0 d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavMobile">
+                        <i class="bi bi-list fs-1" style="color: #5c3a21;"></i>
+                    </button>
+                </div>
+                <div class="col-6 text-center">
+                    <a href="index.html" class="d-inline-flex align-items-center text-decoration-none marca-floreven" style="color: #5c3a21;">
+                        <i class="bi bi-cake2-fill me-2 fs-2" style="color: #f3a3b7;"></i> 
+                        <span class="fs-2 fw-extrabold" style="font-family: 'Playfair Display', Georgia, serif; font-weight: 800;">PASTELERÍA FLOREVEN</span>
+                    </a>
+                </div>
+                <div class="col-3 text-end">
+                    <div class="dropdown d-inline-block">
+                        <a class="btn btn-link text-decoration-none dropdown-toggle fw-bold" href="#" data-bs-toggle="dropdown" style="color: #5c3a21;">
+                            <i class="bi bi-person-circle fs-4" style="color: #f3a3b7;"></i> <span class="d-none d-sm-inline ms-1">Mi Cuenta</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-in-right me-2"></i>Ingresar</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-person-plus me-2"></i>Registrarse</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Menú Navegación Desktop -->
+            <div class="row d-none d-lg-block">
+                <div class="col-12 py-1">
+                    <nav class="nav justify-content-center">
+                        <a class="nav-link fw-bold" href="/index.html">Inicio</a>
+                        <a class="nav-link fw-bold" href="/pages/marcoTeorico.html">Marco Teórico</a>
+                        <a class="nav-link fw-bold" href="/pages/analisisEstructurado.html">Análisis Estructurado</a>
+                        <a class="nav-link fw-bold" href="/pages/orientadoObjetos.html">Orientado a Objetos</a>
+                        <a class="nav-link fw-bold" href="#"><i class="bi bi-play-btn-fill me-1"></i>Videos</a>
+                        <a class="nav-link fw-bold" href="/pages/contactos.html">Contactos</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container py-5">
+        <!-- Encabezado -->
+        <div class="text-center mb-5">
+            <h1 class="fw-bold" style="color: #5c3a21;">Análisis Estructurado</h1>
+            <div class="mx-auto" style="width: 80px; height: 4px; background-color: #f3a3b7; border-radius: 2px;"></div>
+        </div>
+
+        <div class="row justify-content-center">
+            <!-- Navegación -->
+            <div class="col-12 text-center mb-4">
+                <div class="d-flex flex-wrap justify-content-center gap-2">
+                    <a href="#ambiental" class="btn btn-outline-dark btn-sm rounded-pill px-3">Modelo ambiental</a>
+                    <a href="#comportamiento" class="btn btn-outline-dark btn-sm rounded-pill px-3">Modelo de comportamiento</a>
+                </div>
+            </div>
+
+            <!-- Contenido Individual -->
+            <main class="col-lg-10">
+                
+                <!-- 1. Modelo ambiental -->
+                <div id="ambiental" class="card border-0 shadow-sm mb-4" style="background: #fffaf5; border-left: 5px solid #f3a3b7;">
+                    <div class="card-body p-4">
+                        <h4 class="fw-bold" style="color: #5c3a21;">Modelo ambiental</h4>
+                        <h5 class="fw-bold" style="color: #5c3a21;">DFD Nivel O </h5>
+                        
+                        <ol type="a" class="text-muted">
+                            <li><strong>Declaración de propósitos: </strong>Desarrollamos un sistema de gestión y ventas para una pastelería que permite al administrador controlar los productos, registrar las ventas realizadas por el personal y optimizar la atención al cliente mediante una administración más eficiente.</li>
+                            <li><strong>Diagrama de contexto: </strong><center><img src="/img/diagramaContexto.png" alt="Diagrama de Contexto" class="img-fluid"></center></li>
+                            <li><strong>Lista de propositos</strong>
+                                <ul class="text-muted">
+                                    <li>Administrar productos y categorías</li>
+                                    <li>Gestionar inventario y stock</li>
+                                    <li>Registrar transacciones de venta</li>
+                                    <li>Gestionar pedidos de clientes</li>
+                                    <li>Procesar pagos y facturación</li>
+                                    <li>Generar reportes administrativos</li>
+                                    <li>Gestionar usuarios del sistema</li>
+                                    <li>Supervisar pedidos y entregas</li>
+                            </li>
+                        </ol>
+                        
+                    </div>
+                </div>
+
+                <!-- 2. Modelo de comportamiento -->
+                <div id="comportamiento" class="card border-0 shadow-sm mb-4" style="background: #fffaf5; border-left: 5px solid #f3a3b7;">
+                    <div class="card-body p-4">
+                        <h4 class="fw-bold" style="color: #5c3a21;">Modelo de comportamiento</h4>
+                        <h5 class="fw-bold" style="color: #5c3a21;">DFD Nivel 1</h5>
+                        <center><img src="/img/nivel1.png" alt="DFD Nivel 1" class="img-fluid"></center>
+                        <br>
+                        <h5 class="fw-bold" style="color: #5c3a21;">DFD Nivel 2</h5>
+                        <center><img src="/img/nivel2.png" alt="DFD Nivel 2" class="img-fluid"></center>
+                        <br>
+                        <h5 class="fw-bold" style="color: #5c3a21;">Modelo Entidad Relacion</h5>
+                        <center><img src="/img/ModeloER.png" alt="Modelo Entidad Relacion" class="img-fluid"></center>
+                        <br>
+                        <h5 class="fw-bold" style="color: #5c3a21;">Diagrama de Procesos</h5>
+                        <center><img src="/img/DiagramaProcesos.png" alt="Diagrama de Procesos" class="img-fluid"></center>
+                        
+                    </div>
+                </div>
+
+            </main>
+        </div>
+    </div>
+
+    <footer class="text-white pt-4 mt-5" style="background-color: #362214; border-top: 4px solid #f3a3b7;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h6 style="color: #f3a3b7;">Pastelería Proyecto</h6>
+                    <p class="small text-white-50">Sistema de Gestión de Ventas e Inventarios desarrollado para la materia de Análisis y Diseño de Sistemas.</p>
+                </div>
+                <div class="col-md-4">
+                    <h6 style="color: #f3a3b7;">Contacto</h6>
+                    <p class="small text-white-50">Soporte técnico: tico@gmail.com</p>
+                </div>
+            </div>
+            <div class="text-center py-3 border-top border-secondary mt-3">
+                <p class="small mb-0 text-white-50">&copy; 2026 <b>Pastelería</b>. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
