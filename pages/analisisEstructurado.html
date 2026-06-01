@@ -26,28 +26,29 @@
     </style>
 </head>
 <body>
-
     <header class="bg-pasteleria-header border-bottom sticky-top shadow-sm">
         <div class="container">
-            <!-- Fila superior: Logo y Usuario -->
+            <!-- Fila superior -->
             <div class="row align-items-center pt-3 pb-2 border-bottom border-light">
                 <div class="col-3 text-start">
-                    <button class="btn border-0 d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavMobile">
+                    <!-- Botón móvil con target a navbarMobile -->
+                    <button class="btn border-0 d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMobile">
                         <i class="bi bi-list fs-1" style="color: #5c3a21;"></i>
                     </button>
                 </div>
                 <div class="col-6 text-center">
+                    <!-- Título responsivo usando clases de texto de Bootstrap -->
                     <a href="index.html" class="d-inline-flex align-items-center text-decoration-none marca-floreven" style="color: #5c3a21;">
-                        <i class="bi bi-cake2-fill me-2 fs-2" style="color: #f3a3b7;"></i> 
-                        <span class="fs-2 fw-extrabold" style="font-family: 'Playfair Display', Georgia, serif; font-weight: 800;">PASTELERÍA FLOREVEN</span>
+                        <i class="bi bi-cake2-fill me-2 d-none d-sm-block fs-2" style="color: #f3a3b7;"></i> 
+                        <span class="fs-4 fs-sm-3 fs-md-2 fw-extrabold" style="font-family: 'Playfair Display', Georgia, serif; font-weight: 800;">PASTELERIA FLOREVEN</span>
                     </a>
                 </div>
-                
+                <div class="col-3"></div>
             </div>
             
-            <!-- Menú Navegación Desktop -->
-            <div class="row d-none d-lg-block">
-                <div class="col-12 py-1">
+            <!-- Menú -->
+            <div class="row">
+                <div class="col-12">
                     <nav class="nav justify-content-center">
                         <a class="nav-link fw-bold" href="/index.html">Inicio</a>
                         <a class="nav-link fw-bold" href="/pages/marcoTeorico.html">Marco Teórico</a>
