@@ -26,7 +26,7 @@
     </style>
 </head>
 <body>
-    <header class="bg-pasteleria-header border-bottom sticky-top shadow-sm">
+<header class="bg-pasteleria-header border-bottom sticky-top shadow-sm">
         <div class="container">
             <!-- Fila superior -->
             <div class="row align-items-center pt-3 pb-2 border-bottom border-light">
@@ -77,13 +77,13 @@
                             </div>
 
                             <div class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle fw-bold" href="#" data-bs-toggle="dropdown">Orientado a Objetos</a>
+                                <a class="nav-link dropdown-toggle fw-bold" href="video.html" data-bs-toggle="dropdown">Orientado a Objetos</a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="orientadoObjetos.html#diagrama">Diagramas de casos de uso</a></li>
                                 </ul>
                             </div>
 
-                            <a class="nav-link fw-bold" href="video.html">Videos</a>
+                            <a class="nav-link fw-bold" href="#">Videos</a>
                             <a class="nav-link fw-bold" href="contactos.html">Contactos</a>
                         </div>
                     </nav>
@@ -92,72 +92,23 @@
         </div>
     </header>
 
-    <div class="container py-5">
-        <!-- Encabezado -->
-        <div class="text-center mb-5">
-            <h1 class="fw-bold" style="color: #5c3a21;">Análisis Estructurado</h1>
-            <div class="mx-auto" style="width: 80px; height: 4px; background-color: #f3a3b7; border-radius: 2px;"></div>
-        </div>
-
+    <main class="container my-5">
         <div class="row justify-content-center">
-            <!-- Navegación -->
-            <div class="col-12 text-center mb-4">
-                <div class="d-flex flex-wrap justify-content-center gap-2">
-                    <a href="#ambiental" class="btn btn-outline-dark btn-sm rounded-pill px-3">Modelo ambiental</a>
-                    <a href="#comportamiento" class="btn btn-outline-dark btn-sm rounded-pill px-3">Modelo de comportamiento</a>
+            <div class="col-md-10 text-center">
+                <h2 class="mb-4" style="color: #5c3a21;">Presentación del Proyecto</h2>
+                <p class="mb-4">Aquí puedes visualizar la demostración funcional del sistema de gestión para la pastelería.</p>
+                
+                <!-- Contenedor responsivo para el video -->
+                <div class="ratio ratio-16x9 shadow-lg rounded">
+                    <iframe 
+                        src="https://www.youtube.com/embed/TU_ID_DE_VIDEO_AQUI" 
+                        title="Video demostrativo" 
+                        allowfullscreen>
+                    </iframe>
                 </div>
             </div>
-
-            <!-- Contenido Individual -->
-            <main class="col-lg-10">
-                
-                <!-- 1. Modelo ambiental -->
-                <div id="ambiental" class="card border-0 shadow-sm mb-4" style="background: #fffaf5; border-left: 5px solid #f3a3b7;">
-                    <div class="card-body p-4">
-                        <h4 class="fw-bold" style="color: #5c3a21;">Modelo ambiental</h4>
-                        <h5 class="fw-bold" style="color: #5c3a21;">DFD Nivel O </h5>
-                        
-                        <ol type="a" class="text-muted">
-                            <li><strong>Declaración de propósitos: </strong>Desarrollamos un sistema de gestión y ventas para una pastelería que permite al administrador controlar los productos, registrar las ventas realizadas por el personal y optimizar la atención al cliente mediante una administración más eficiente.</li>
-                            <li><strong>Diagrama de contexto: </strong><center><img src="../img/diagramaContexto.png" alt="Diagrama de Contexto" class="img-fluid"></center></li>
-                            <li><strong>Lista de propositos</strong>
-                                <ul class="text-muted">
-                                    <li>Administrar productos y categorías</li>
-                                    <li>Gestionar inventario y stock</li>
-                                    <li>Registrar transacciones de venta</li>
-                                    <li>Gestionar pedidos de clientes</li>
-                                    <li>Procesar pagos y facturación</li>
-                                    <li>Generar reportes administrativos</li>
-                                    <li>Gestionar usuarios del sistema</li>
-                                    <li>Supervisar pedidos y entregas</li>
-                            </li>
-                        </ol>
-                        
-                    </div>
-                </div>
-
-                <!-- 2. Modelo de comportamiento -->
-                <div id="comportamiento" class="card border-0 shadow-sm mb-4" style="background: #fffaf5; border-left: 5px solid #f3a3b7;">
-                    <div class="card-body p-4">
-                        <h4 class="fw-bold" style="color: #5c3a21;">Modelo de comportamiento</h4>
-                        <h5 class="fw-bold" style="color: #5c3a21;">DFD Nivel 1</h5>
-                        <center><img src="../img/nivel1.png" alt="DFD Nivel 1" class="img-fluid"></center>
-                        <br>
-                        <h5 class="fw-bold" style="color: #5c3a21;">DFD Nivel 2</h5>
-                        <center><img src="../img/nivel2.png" alt="DFD Nivel 2" class="img-fluid"></center>
-                        <br>
-                        <h5 class="fw-bold" style="color: #5c3a21;">Modelo Entidad Relacion</h5>
-                        <center><img src="../img/ModeloER.png" alt="Modelo Entidad Relacion" class="img-fluid"></center>
-                        <br>
-                        <h5 class="fw-bold" style="color: #5c3a21;">Diagrama de Procesos</h5>
-                        <center><img src="../img/DiagramaProcesos.png" alt="Diagrama de Procesos" class="img-fluid"></center>
-                        
-                    </div>
-                </div>
-
-            </main>
         </div>
-    </div>
+    </main>
 
     <footer class="text-white pt-4 mt-5" style="background-color: #362214; border-top: 4px solid #f3a3b7;">
         <div class="container">
