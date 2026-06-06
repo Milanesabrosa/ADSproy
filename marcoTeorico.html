@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastelería FLOREVEN - ADS</title>
+    
+    <!-- Bootstrap CSS vía CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <style>
+        :root {
+            --pastel-cafe: #5c3a21;
+            --pastel-rosa: #f3a3b7;
+            --pastel-beige-fondo: #f5efe6;
+            --pastel-crema-header: #fffaf5;
+        }
+        body { background-color: var(--pastel-beige-fondo); }
+        .nav-link { color: var(--pastel-cafe) !important; font-size: 1.05rem; transition: all 0.2s ease; padding: 0.5rem 1rem !important; }
+        .nav-link:hover { color: var(--pastel-rosa) !important; }
+        .bg-pasteleria-header { background-color: var(--pastel-crema-header) !important; }
+        .marca-floreven { letter-spacing: 1px; text-shadow: 1px 1px 2px rgba(92, 58, 33, 0.1); white-space: nowrap; }
+        .button-pedido:hover { background-color: #5c3a21 !important; transform: translateY(-2px); }
+        .dropdown-item:hover { background-color: var(--pastel-rosa) !important; color: white !important; }
+    </style>
+</head>
+<body>
+
+    <header class="bg-pasteleria-header border-bottom sticky-top shadow-sm">
+        <div class="container">
+            <!-- Fila superior -->
+            <div class="row align-items-center pt-3 pb-2 border-bottom border-light">
+                <div class="col-3 text-start">
+                    <!-- Botón móvil con target a navbarMobile -->
+                    <button class="btn border-0 d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMobile">
+                        <i class="bi bi-list fs-1" style="color: #5c3a21;"></i>
+                    </button>
+                </div>
+                <div class="col-6 text-center">
+                    <a href="../index.html" class="d-inline-flex align-items-center text-decoration-none marca-floreven" style="color: #5c3a21;">
+                        
+                        <i class="bi bi-cake2-fill me-2 fs-4 fs-sm-2" style="color: #f3a3b7;"></i> 
+                        
+                        <span class="fw-extrabold text-start" style="font-family: 'Playfair Display', Georgia, serif; font-weight: 800; line-height: 1.1;">
+                            <span class="d-none d-md-inline fs-2">PASTELERÍA FLOREVEN</span>
+                            
+                            <span class="d-md-none fs-6">
+                                PASTELERÍA<br>FLOREVEN
+                            </span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Menú -->
+            <div class="row">
+                <div class="col-12">
+                    <nav class="collapse navbar-collapse d-lg-block" id="navbarMobile">
+                        <div class="nav justify-content-center flex-column flex-lg-row py-2">
+                            <a class="nav-link fw-bold" href="../index.html">Inicio</a>
+
+                            <div class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle fw-bold" href="#" data-bs-toggle="dropdown">Marco Teórico</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="marcoTeorico.html#introduccion">Introducción</a></li>
+                                    <li><a class="dropdown-item" href="marcoTeorico.html#antecedentes">Antecedentes</a></li>
+                                    <li><a class="dropdown-item" href="marcoTeorico.html#planteamiento">Planteamiento</a></li>
+                                    <li><a class="dropdown-item" href="marcoTeorico.html#arbol">Árbol Problemas</a></li>
+                                    <li><a class="dropdown-item" href="marcoTeorico.html#proposito">Propósito</a></li>
+                                    <li><a class="dropdown-item" href="marcoTeorico.html#justificacion">Justificación</a></li>
+                                    <li><a class="dropdown-item" href="marcoTeorico.html#alcances">Alcances</a></li>
+                                    <li><a class="dropdown-item" href="marcoTeorico.html#metodologias">Metodología</a></li>
+                                    <li><a class="dropdown-item" href="marcoTeorico.html#planificacion">Planificación</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle fw-bold" href="#" data-bs-toggle="dropdown">Análisis Estructurado</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="analisisEstructurado.html#ambiental">Modelo ambiental</a></li>
+                                    <li><a class="dropdown-item" href="analisisEstructurado.html#comportamiento">Modelo de comportamiento</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle fw-bold" href="#" data-bs-toggle="dropdown">Orientado a Objetos</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="orientadoObjetos.html#diagrama">Diagramas de casos de uso</a></li>
+                                </ul>
+                            </div>
+
+                            <a class="nav-link fw-bold" href="video.html">Videos</a>
+                            <a class="nav-link fw-bold" href="contactos.html">Contactos</a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container py-5">
+        <!-- Encabezado -->
+        <div class="text-center mb-5">
+            <h1 class="fw-bold" style="color: #5c3a21;">Marco Teórico</h1>
+            <div class="mx-auto" style="width: 80px; height: 4px; background-color: #f3a3b7; border-radius: 2px;"></div>
+        </div>
+
+        <div class="row justify-content-center">
+            <!-- Navegación -->
+            <div class="col-12 text-center mb-4">
+                <div class="d-flex flex-wrap justify-content-center gap-2">
+                    <a href="#introduccion" class="btn btn-outline-dark btn-sm rounded-pill px-3">Introducción</a>
+                    <a href="#antecedentes" class="btn btn-outline-dark btn-sm rounded-pill px-3">Antecedentes</a>
+                    <a href="#planteamiento" class="btn btn-outline-dark btn-sm rounded-pill px-3">Planteamiento</a>
+                    <a href="#arbol" class="btn btn-outline-dark btn-sm rounded-pill px-3">Árbol Problemas</a>
+                    <a href="#proposito" class="btn btn-outline-dark btn-sm rounded-pill px-3">Propósito</a>
+                    <a href="#justificacion" class="btn btn-outline-dark btn-sm rounded-pill px-3">Justificación</a>
+                    <a href="#alcances" class="btn btn-outline-dark btn-sm rounded-pill px-3">Alcances</a>
+                    <a href="#metodologias" class="btn btn-outline-dark btn-sm rounded-pill px-3">Metodología</a>
+                    <a href="#planificacion" class="btn btn-outline-dark btn-sm rounded-pill px-3">Planificación</a>
+                </div>
+            </div>
+
+            <!-- Contenido Individual -->
+            <main class="col-lg-10">
+                
+                <!-- 1. Introducción -->
+                <div id="introduccion" class="card border-0 shadow-sm mb-4" style="background: #fffaf5; border-left: 5px solid #f3a3b7;">
+                    <div class="card-body p-4">
+                        <h4 class="fw-bold" style="color: #5c3a21;">Introducción</h4>
+                        <p class="text-muted">En la actualidad, la gestión de ventas e inventarios en pequeñas y medianas empresas ha experimentado una transformación muy grande gracias al avance de nuevas tecnologías de la información. En los negocios del ámbito alimenticio, como lo son las pastelerías y/o cafeterías, no son ajenos a esta realidad: la administración manual de pedidos, stock de insumos y registro de ventas representa una carga operativa que incrementa el margen de error y existe una deficiencia dentro del negocio.
+                        El presente proyecto surge de la necesidad de digitalizar y optimizar los procesos comerciales que tiene una pastelería local “Florever” que opera actualmente con dos sucursales. Hoy en día, el control de ventas e inventarios se realiza de forma manual casi en su totalidad, lo que dificulta la toma de decisiones oportunas para el negocio y genera pérdidas por desabastecimiento o por el contrario sobrestock, y limita la visibilidad del rendimiento del negocio en tiempo real.
+                        Teniendo en cuenta esta problemática, proponemos el desarrollo de un sistema de ventas e inventario web que permita registrar productos, gestionar el stock de insumos, procesar ventas y generar reportes, todo con una plataforma centralizada accesible  ambas sucursales. Esta solución busca mejora de la productividad el personal, aparte reducir errores operativos y brindar información confiable para un mejor manejo a nivel de gerencia del negocio
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 2. Antecedentes -->
+                <div id="antecedentes" class="card border-0 shadow-sm mb-4" style="background: #fffaf5; border-left: 5px solid #f3a3b7;">
+                    <div class="card-body p-4">
+                        <h4 class="fw-bold" style="color: #5c3a21;">Antecedentes</h4>
+                        <h5 class="fw-bold" style="color: #5c3a21;">Antecedentes tecnológicos</h5>
+                        <p class="text-muted">La evolución de los sistemas de gestión de ventas ha sido notable. Los primeros sistemas Point of Sale (POS) surgieron en la década de 1980 como terminales electrónicas que sustituyeron a las cajas registradoras tradicionales, permitiendo un registro de ventas más ordenado. Con la llegada de Internet y las aplicaciones web en los años 2000, estos sistemas se trasladaron a plataformas accesibles desde cualquier dispositivo con conexión, reduciendo la dependencia de hardware específico.
+                        En el contexto boliviano actual, al analizar empresas que ofrecen este tipo de servicios —por ejemplo, la pastelería “Michelline”— se observa que muchas no cuentan con un sistema de ventas en línea eficiente. La página web de esta pastelería apenas contiene documentos en PDF y no facilita el proceso de compra ni la realización de pedidos; su modelo operativo parece basarse en la atención por WhatsApp y llamadas telefónicas. Esto resulta sorprendente, pues cabría esperar que un negocio de su prestigio dispusiera de una solución digital más robusta para la gestión de pedidos y ventas.
+                        Y lo más lamentable es que esto se repite en muchas otras pastelerías: aunque suelen contar con un marketing eficaz, principalmente a través de páginas de Facebook, la confirmación final de cualquier pedido se realiza casi siempre mediante llamada telefónica o mensaje por WhatsApp.
+                        </p>
+                        <h5 class="fw-bold" style="color: #5c3a21;">Antecedentes sociales</h5>
+                        <p class="text-muted">En Bolivia, y particularmente en la ciudad de La Paz y El Alto, el sector de repostería y pastelería casera ha tenido un incremento gradual en estos últimos años, impulsados principalmente por el emprendimiento local y la creciente demanda de productos de confitería para distintos eventos sociales, celebraciones e incluso el consumo diario. Sin embargo, gran parte de estos negocios aún operan con métodos tradicionales de registro: cuadernos de ventas, hojas de cálculo básicas o simplemente de memoria, lo que genera una grave desorganización, pérdida de información y dificultades para escalar el negocio. Es de este modo que tomamos y analizamos una pastelería en particular, ubicada en la ciudad de El Alto.
+                        La falta de distintas herramientas tecnológicas en el sector alimenticio en general también responde a una diferencia digital que afecta a pequeños emprendedores que no cuentan con formación técnica ni recursos para implementar sistemas comerciales complejos.  Esta realidad social evidencia la necesidad de soluciones tecnológicas simples, económicas y adaptadas al contexto local, que permitan a los pequeños empresarios competir con mayor eficiencia y mejorar la calidad de su gestión interna y por ende pueda existir un progreso significativo del negocio.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 3. Planteamiento del Problema -->
+                <div id="planteamiento" class="card border-0 shadow-sm mb-4" style="background: #fffaf5; border-left: 5px solid #f3a3b7;">
+                    <div class="card-body p-4">
+                        <h4 class="fw-bold" style="color: #5c3a21;">Planteamiento del Problema</h4>
+                        <h5 class="fw-bold" style="color: #5c3a21;">Problema central</h5>
+                        <p class="text-muted">¿De qué manera la ausencia de un sistema digital de ventas e inventario afecta la eficiencia operativa y la toma de decisiones en la pastelería y sus dos sucursales?</p>
+                        <h5 class="fw-bold" style="color: #5c3a21;">Problemas secundarios</h5>
+                        <ol class="text-muted">
+                            <li>La falta de un registro automatizado de ventas genera pérdida de información y dificulta el seguimiento de los ingresos diarios de la pastelería.</li> 
+                            <li>El control manual del inventario de insumos provoca desabastecimiento o sobrestock, afectando la producción y la rentabilidad del negocio.</li>
+                            <li>La ausencia de reportes en tiempo real limita la capacidad de los administradores para tomar decisiones oportunas sobre el negocio.</li> 
+                            <li>La falta de centralización de la información entre las dos sucursales genera inconsistencias en los datos y dificulta la gestión coordinada del negocio.</li>
+                            <li>Los errores humanos derivados del registro manual impactan negativamente en la atención al cliente y en la experiencia de compra.</li> 
+                            
+                        </ol>
+                    </div>
+                </div>
+
+                <!-- 4. Árbol de Problemas -->
+                <div id="arbol" class="card border-0 shadow-sm mb-4" style="background: #fffaf5; border-left: 5px solid #f3a3b7;">
+                    <div class="card-body p-4">
+                        <h4 class="fw-bold" style="color: #5c3a21;">Árbol de Problemas</h4>
+                        <center><img src="../img/arbol.jpg" alt="Árbol de Problemas" class="img-fluid"></center>
+                        
+                    </div>
+                </div>
+
+                <!-- 5. Propósito del estudio -->
+                <div id="proposito" class="card border-0 shadow-sm mb-4" style="background: #fffaf5; border-left: 5px solid #f3a3b7;">
+                    <div class="card-body p-4">
+                        <h4 class="fw-bold" style="color: #5c3a21;">Propósito del estudio</h4>
+                        <h5 class="fw-bold" style="color: #5c3a21;">Objetivo general</h5>
+                        <p class="text-muted">Desarrollar un sistema web de gestión de ventas e inventario para la pastelería y sus dos sucursales, que permita centralizar el registro de ventas, controlar el stock de insumos en tiempo real y generar reportes que faciliten la toma de decisiones administrativas para tener una mayor rentabilidad en el negocio.</p>
+                        <h5 class="fw-bold" style="color: #5c3a21;">Objetivos específicos</h5>
+                        <ol class="text-muted">
+                            <li>Implementar un módulo de registro de ventas automatizado que permita al personal de cada sucursal registrar transacciones de forma rápida, precisa y sin duplicidad de información, eliminando la dependencia de registros manuales en papel o cuadernos.</li> 
+                            <br>
+                            <li>Desarrollar un módulo de control de inventario que registre entradas y salidas de insumos en tiempo real, genere alertas de stock mínimo y permita al administrador anticiparse a situaciones de desabastecimiento o sobrestock que afecten la producción.</li>
+                            <br>
+                            <li>Diseñar un módulo de reportería y estadísticas que proporcione a los administradores información consolidada sobre ventas diarias, semanales y mensuales, permitiendo un análisis oportuno del rendimiento del negocio sin necesidad de consolidaciones manuales.</li> 
+                            <br>
+                            <li>Construir una arquitectura centralizada que unifique la información de las dos sucursales en una sola plataforma, garantizando consistencia de datos, acceso simultáneo y visibilidad global del negocio desde cualquier punto con conexión a internet.</li>
+                            <br>
+                            <li>Diseñar una interfaz de usuario intuitiva y de fácil manejo, que reduzca la curva de aprendizaje del personal operativo y minimice la ocurrencia de errores humanos durante el proceso de atención al cliente y registro de ventas.</li> 
+                            
+                        </ol>
+                    </div>
+                </div>
+
+                <!-- 6. Justificación Social -->
+                <div id="justificacion" class="card border-0 shadow-sm mb-4" style="background: #fffaf5; border-left: 5px solid #f3a3b7;">
+                    <div class="card-body p-4">
+                        <h4 class="fw-bold" style="color: #5c3a21;">Justificación</h4>
+                    </div>
+                </div>
+                <div id="justificacion-social" class="card border-0 shadow-sm mb-4" style="background: #fffaf5; border-left: 5px solid #f3a3b7;">
+                    <div class="card-body p-4">
+                        <h4 class="fw-bold" style="color: #5c3a21;">Justificación Social</h4>
+                        <p class="text-muted">La implementación de este sistema de ventas e inventario no es únicamente una mejora técnica, sino un aporte significativo a la red social y económica en el que opera la pastelería, específicamente dentro del dinámico entorno comercial de las ciudades de La Paz y El Alto. El impacto social articula en tres dimensiones fundamentales:</p>
+                        
+                        <h5 class="fw-bold" style="color: #5c3a21;">Optimización de la experiencia del personal</h5>
+                        <p class="text-muted">Para el equipo de trabajo, es un alivio tener la automatización; esto quiere decir que es una mejora directa en su calidad de vida laboral. Al reducir la carga operativa mediante la sistematización de inventarios y el registro ágil de ventas, se evita el estrés derivado de los errores humanos y las discrepancias en el manejo de efectivo o productos. Esto permite que el personal —quien es el rostro de la empresa— pueda desplazar su atención de la burocracia administrativa hacia la excelencia en el servicio y la creatividad en la pastelería. En última instancia, un entorno laboral ordenado y con herramientas eficientes favorece un clima organizacional saludable, lo cual es vital para reducir la rotación de personal y fomentar el compromiso.</p>
+
+                        <h5 class="fw-bold" style="color: #5c3a21;">Valor agregado para el cliente y la comunidad</h5>
+                        <p class="text-muted">Desde la perspectiva del consumidor, la eficiencia del sistema se traduce en una experiencia de compra superior, como dicen “dan ganas de comprar”. En una sociedad donde el tiempo es oro, la agilidad en la atención, la precisión en los pedidos personalizados —tan comunes en celebraciones locales— y la puntualidad en las entregas son factores que fortalecen la confianza entre la pastelería y su clientela. Al garantizar que cada detalle, desde ingredientes específicos, hasta fechas de entrega, sea gestionado correctamente, el sistema se convierte en una herramienta de fidelización que dignifica la experiencia del cliente boliviano.</p>
+
+                        <h5 class="fw-bold" style="color: #5c3a21;">Dinamización de la economía local</h5>
+                        <p class="text-muted">A nivel comunitario, el éxito de un emprendimiento local es un motor de desarrollo. Fortalecer a esta pastelería, con ayuda de la tecnología para que optimice sus costos y reduzca el desperdicio de insumos, permite que el negocio sea más competitivo y sostenible en el tiempo. Un negocio que crece es un negocio que contribuye activamente a la generación y mantenimiento de empleos formales en la región. Al mejorar la rentabilidad y la gestión, la empresa aumenta sus probabilidades de expansión, lo cual se traduce en mayores ganancias.</p>
+                    </div>
+                </div>
+
+                <!-- 7. Justificación Económica -->
+                <div id="justificacion-economica" class="card border-0 shadow-sm mb-4" style="background: #fffaf5; border-left: 5px solid #f3a3b7;">
+                    <div class="card-body p-4">
+                        <h4 class="fw-bold" style="color: #5c3a21;">Justificación Económica</h4>
+                        
+                        <h5 class="fw-bold" style="color: #5c3a21;">Optimización de insumos y mitigación de mermas</h5>
+                        <p class="text-muted">El control automático del inventario permite una gestión precisa de insumos perecederos —tales como mantequilla, huevos, cremas y frutas—, los cuales representan una parte crítica de costos variables. Al evitar el sobrestock y mejorar la rotación, se reducen drásticamente las pérdidas por vencimiento o deterioro de materia prima. Al mismo tiempo, el sistema garantiza la disponibilidad constante de productos mediante alertas de stock crítico, eliminando paros en la producción que históricamente derivan en ventas perdidas y, más importante aún, en la posible fuga de clientes hacia la competencia por falta de productos específicos. Esta precisión en el manejo de insumos permite, además, establecer estándares de costos por receta, lo que facilita un escrutinio más estricto sobre el desperdicio generado durante los procesos de transformación.</p>
+
+                        <h5 class="fw-bold" style="color: #5c3a21;">Rigurosidad financiera y trazabilidad operativa</h5>
+                        <p class="text-muted">La transición hacia el registro automatizado de ventas elimina las inconsistencias, errores de redondeo y faltantes que suelen ser recurrentes en el manejo manual de los cierres de caja. Este sistema dota a la administración de una visibilidad financiera sin precedentes, permitiendo monitorear en tiempo real los ingresos, los márgenes de ganancia por línea de producto y los picos de demanda según la estacionalidad local. Contar con esta trazabilidad financiera no solo garantiza la transparencia absoluta en la recaudación, sino que transforma datos crudos en inteligencia comercial; la administración podrá realizar análisis comparativos de rendimiento entre sucursales, identificando qué unidades son más rentables y cuáles requieren ajustes en su modelo operativo o en su mix de productos.</p>
+
+                        <h5 class="fw-bold" style="color: #5c3a21;">Eficiencia administrativa y reingeniería de procesos</h5>
+                        <p class="text-muted">La automatización de tareas administrativas —como la consolidación de reportes, el conteo físico de inventario y el cuadre de ventas— libera al capital humano de funciones operativas de bajo valor agregado. Que exista este ahorro representa una optimización de la productividad que permite redirigir al personal hacia actividades estratégicas, tales como el control de calidad, la atención personalizada al cliente o la diversificación de la oferta. “Ser eficiente”. Esta reasignación de tiempo del personal hacia labores de valor representa, en sí misma, una reducción del costo operativo total por unidad de producto terminado.</p>
+                    </div>
+                </div>
+
+                <!-- 8. Justificación Tecnologica -->
+                <div id="justificacion-tecnologica" class="card border-0 shadow-sm mb-4" style="background: #fffaf5; border-left: 5px solid #f3a3b7;">
+                    <div class="card-body p-4">
+                        <h4 class="fw-bold" style="color: #5c3a21;">Justificación Tecnológica</h4>
+                        
+                        <h5 class="fw-bold" style="color: #5c3a21;">Robustez y arquitectura de datos</h5>
+                        <p class="text-muted">El uso de bases de datos relacionales es una decisión técnica que asegura la integridad, consistencia y seguridad de la información financiera y principalmente operativa. Al garantizar que todos los datos de transacción, inventario y registros de clientes estén centralizados y normalizados, se erradican los silos de información que suelen dificultar la administración entre diferentes puntos de venta. Esta estructura, combinada con un diseño de interfaz responsiva, asegura que el sistema sea funcional tanto en terminales de escritorio de alto rendimiento, como en dispositivos móviles, pc’s, etc. Utilizados en el área de producción o atención al cliente, adaptándose a los requerimientos que ameritan en este siglo 21.</p>
+
+                        <h5 class="fw-bold" style="color: #5c3a21;">Ecosistema omnicanal y conectividad</h5>
+                        <p class="text-muted">El sistema está diseñado bajo un paradigma de omnicanalidad que permite integrar múltiples puntos de contacto —redes sociales, mensajería instantánea como WhatsApp y el sitio web de la pastelería— dentro de una plataforma unificada. Esta integración tecnológica elimina la fragmentación en la gestión de pedidos, permitiendo al personal centralizar la demanda proveniente de diversos canales digitales en un único flujo de trabajo.</p>
+
+                        <h5 class="fw-bold" style="color: #5c3a21;">Analítica predictiva e inteligencia de negocio</h5>
+                        <p class="text-muted">Más allá de la operatividad, el núcleo del sistema integra capacidades de análisis predictivo que transforman el registro de transacciones en conocimiento estratégico. Mediante el procesamiento de datos históricos, el sistema permite identificar patrones de consumo, prever tendencias estacionales y anticipar volúmenes de demanda específicos para cada línea de producto. Esta capacidad de análisis dota a la administración de un mecanismo para la toma de decisiones basada en métricas empíricas y no en la intuición; la capacidad de entender con precisión qué busca el consumidor antes de que la demanda se materialice permite ajustar proactivamente la cadena de suministro y la planificación de producción, minimizando riesgos y maximizando la satisfacción del usuario final.</p>
+                    </div>
+                </div>
+
+                
+                <!-- 9. Alcances -->
+                <div id="alcances" class="card border-0 shadow-sm mb-4" style="background: #fffaf5; border-left: 5px solid #f3a3b7;">
+                    <div class="card-body p-4">
+                        <h4 class="fw-bold" style="color: #5c3a21;">Alcances</h4>
+                    </div>
+                </div>
+                <div id="alcance-tecnico" class="card border-0 shadow-sm mb-4" style="background: #fffaf5; border-left: 5px solid #f3a3b7;">
+                    <div class="card-body p-4">
+                        <h4 class="fw-bold" style="color: #5c3a21;">Alcance Técnico</h4>
+                        <p class="text-muted">“El sistema se diseñará como una aplicación web orientada a centralizar la gestión de ventas, inventario y reportes, incorporando módulos de administración de usuarios, control de productos y seguimiento de insumos, lo cual coincide con funcionalidades presentes en soluciones especializadas para pastelerías y panaderías.”
+                        Para el frontend se empleará HTML5, CSS3 y JavaScript, con un framework de interfaz que garantice una experiencia de usuario fluida y responsiva. Para el backend se utilizará un lenguaje de programación orientado a objetos con un framework web que facilite la construcción de APIs RESTful para la comunicación entre el cliente y el servidor. La base de datos será relacional, gestionada mediante un sistema como MySQL o PostgreSQL, lo cual garantizará la integridad referencial de los datos y la posibilidad de realizar consultas complejas para la generación de reportes.
+                        <br>El sistema contará con los siguientes módulos funcionales:
+                        </p>
+                        
+                        <h5 class="fw-bold" style="color: #5c3a21;">Módulos funcionales</h5>
+                        <ul class="text-muted">
+                            <li>Gestión de usuarios y roles.</li>
+                            <li>Gestión de productos y categorías.</li>
+                            <li>Registro y consulta de ventas.</li>
+                            <li>Control de inventario de insumos y alertas de stock mínimo.</li>
+                            <li>Reportes de ventas por sucursal y periodo.</li>
+                            <li>Panel de administración centralizado.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="alcance-practico" class="card border-0 shadow-sm mb-4" style="background: #fffaf5; border-left: 5px solid #f3a3b7;">
+                    <div class="card-body p-4">
+                        <h4 class="fw-bold" style="color: #5c3a21;">Alcance Práctico</h4>
+                        <p class="text-muted">En el plano operativo, el sistema cubrirá los procesos diarios esenciales de la pastelería, orientados a mejorar la eficiencia en ventas, control de inventarios y toma de decisiones basadas en información consolidada.</p>
+                        
+                        <h5 class="fw-bold" style="color: #5c3a21;">Procesos operativos</h5>
+                        <ul class="text-muted">
+                            <li><strong>Operaciones de caja:</strong> el personal de caja podrá registrar ventas de manera rápida, seleccionar productos del catálogo, aplicar descuentos o promociones preconfiguradas, generar y visualizar comprobantes de venta (ticket o recibo) y cerrar turnos. El flujo de venta estará optimizado para minimizar el tiempo de atención al cliente.</li>
+                            <li><strong>Gestión de inventarios e insumos:</strong> el encargado de almacén podrá registrar entradas (compras o devoluciones) y salidas por uso o mermas, consultar niveles de stock por insumo y producto terminado, ejecutar ajustes de inventario y generar reportes de consumo. Se incorporarán alertas configurables que avisan cuando un insumo alcance un stock mínimo para facilitar la reposición.</li>
+                            <li><strong>Administración centralizada:</strong> el administrador tendrá acceso a un panel donde se consolidan ventas por sucursal, gráficos resumidos por periodo, listado de productos más vendidos, margen básico por producto (si se registra costo), y herramientas para configurar usuarios, roles y permisos. Desde aquí se podrán establecer precios, promociones temporales y categorías de productos.</li>
+                            <li><strong>Flujo de sucursales:</strong> aunque la plataforma es centralizada, cada sucursal operará con su punto de venta propio; las ventas se registran por punto, mientras que el inventario puede ser global y/o por sucursal según la configuración. Esto permite analizar rendimiento por local sin perder la visión del stock general de producción.</li>
+                        </ul>
+
+                        <h5 class="fw-bold" style="color: #5c3a21;">Exclusiones operativas</h5>
+                        <p class="text-muted">Esta versión no maneja cobros online, integraciones con sistemas de facturación del gobierno ni automatizaciones de logística (por ejemplo envío a domicilio). Tampoco se incluye gestión avanzada de clientes (CRM) con historial detallado, aunque se podrán almacenar datos básicos de clientes si se requiere registrar pedidos.</p>
+                        <br>
+                        <p class="text-muted">Beneficios prácticos esperados: reducción de errores en el registro de ventas, control más preciso de insumos, mejor visibilidad de productos más vendidos, y soporte a decisiones operativas como reposición y promociones.</p>
+                    </div>
+                </div>
+
+                <div id="alcance-temporal" class="card border-0 shadow-sm mb-4" style="background: #fffaf5; border-left: 5px solid #f3a3b7;">
+                    <div class="card-body p-4">
+                        <h4 class="fw-bold" style="color: #5c3a21;">Alcance Temporal</h4>
+                        <p class="text-muted">El proyecto se planifica mediante un esquema de desarrollo estructurado que busca garantizar la entrega de un sistema completo, estable y plenamente operativo. Este enfoque permite una ejecución ordenada de las distintas etapas del análisis y diseño de sistemas, juntando la funcionalidad requeridos por la pastelería.</p>
+
+                        <ul class="text-muted">
+                            <li><strong>Duracion y fecha:</strong> el cronograma propuesto abarca aproximadamente cuatro semanas de desarrollo activo. El inicio se plantea el lunes 5 de mayo de 2026 y la finalización el viernes 30 de mayo de 2026</li>
+                            <li><strong>Fases y actividades:</strong> las principales actividades del proyecto incluyen: análisis y levantamiento de requerimientos detallados (user stories), diseño de arquitectura y modelo de datos, diseño de interfaz de usuario (mockups y prototipos), desarrollo e integración de módulos (frontend y backend), pruebas funcionales e integración, corrección de errores, documentación y entrega/presentación final.</li>
+                            <li><strong>Proceso de trabajo:</strong> Se trabajará bajo una lógica de bloques de desarrollo que permiten el avance constante de los módulos del sistema. Esta organización facilita la validación de cada funcionalidad con la administración, permitiendo recoger observaciones y realizar los ajustes necesarios para que el resultado final se alinee con las necesidades reales del negocio, asegurando que todas las herramientas queden integradas bajo una misma plataforma.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="alcance-geografico" class="card border-0 shadow-sm mb-4" style="background: #fffaf5; border-left: 5px solid #f3a3b7;">
+                    <div class="card-body p-4">
+                        <h4 class="fw-bold" style="color: #5c3a21;">Alcance Geográfico</h4>
+                        <p class="text-muted">El despliegue inicial del sistema estará limitado a la operación de una pastelería con dos sucursales dentro del departamento de La Paz, con cobertura específica en la ciudad de El Alto. Se detallan las ubicaciones y cómo estas interactuarán con la plataforma central.  </p>
+                        
+                        <h5 class="fw-bold" style="color: #5c3a21;">Ubicaciones cubiertas</h5>
+                        <ul class="text-muted">
+                            <li><strong>Sucursal Producción:</strong> Zona Santiago II, Calle 15 #1986.</li>
+                            <li><strong>Sucursal Ventas:</strong> Zona Villa Bolívar Municipal, Calle Sucre #777.</li>
+                        </ul>
+
+                        <h5 class="fw-bold" style="color: #5c3a21;">Arquitectura de acceso:</h5>
+                        <p class="text-muted">Ambas sucursales accederán a la misma plataforma centralizada; la base de datos y la lógica de negocio residirán en el servidor central, de modo que ambas sucursales compartan catálogo de productos y datos administrativos. Sin embargo, las ventas y los movimientos de caja se registrarán de forma diferenciada por punto de venta para permitir reportes por sucursal.</p>
+                        <h5 class="fw-bold" style="color: #5c3a21;">Requisitos de conectividad: </h5>
+                        <p class="text-muted">El sistema requiere conexión a internet para operar en tiempo real con la central. Se recomienda contar con enlaces estables durante el horario de atención; para mitigar cortes temporales, se puede diseñar un modo de operación offline básico (cacheo de ventas locales y sincronización posterior) como mejora futura, pero no está incluido en la versión inicial.</p>
+                        <h5 class="fw-bold" style="color: #5c3a21;">Limitaciones geográficas:</h5>
+                        <p class="text-muted">En esta primera etapa no se contempla el despliegue en otras ciudades ni la configuración de más sucursales fuera del departamento de La Paz. Cualquier expansión geográfica futura requerirá planificación adicional sobre infraestructura (servidores, capacidad de red), ajuste de la arquitectura para mayor concurrencia y posibles cambios legales o fiscales según la jurisdicción.</p>
+                        <h5 class="fw-bold" style="color: #5c3a21;">Consideraciones logisticas:</h5>
+                        <p class="text-muted">estar la producción localizada en un sitio y la venta en otro, se deberá definir el flujo de transferencias de inventario entre centros (por ejemplo, despacho desde la producción hacia la sucursal), y registrar adecuadamente esas transferencias en el sistema para mantener coherencia de stock.</p>
+                    </div>
+                </div>
+
+                <!-- 10. Metodologías -->
+                <div id="metodologias" class="card border-0 shadow-sm mb-4" style="background: #fffaf5; border-left: 5px solid #f3a3b7;">
+                    <div class="card-body p-4">
+                        <h4 class="fw-bold" style="color: #5c3a21;">Metodologías</h4>
+                    </div>
+                </div>
+
+                <div id="metodologia-aup" class="card border-0 shadow-sm mb-4" style="background: #fffaf5; border-left: 5px solid #f3a3b7;">
+                    <div class="card-body p-4">
+                        <h4 class="fw-bold" style="color: #5c3a21;">Metodología de Desarrollo: Proceso Unificado Ágil (AUP)</h4>
+                        <p class="text-muted">Para el desarrollo del sistema de ventas e inventario de la pastelería Florever se adoptó el Proceso Unificado Ágil (AUP, por sus siglas en inglés Agile Unified Process), metodología propuesta por Scott Ambler. El AUP es una versión simplificada del Proceso Unificado de Rational (RUP) que describe una aproximación al desarrollo de aplicaciones combinando conceptos del proceso unificado tradicional con técnicas ágiles, con el objetivo de mejorar la productividad. (Scribd)</p>
+                        <p class="text-muted">La elección de esta metodología responde a las características propias del proyecto: un equipo de trabajo reducido, un alcance temporal acotado (cinco semanas de desarrollo activo) y la necesidad de entregar incrementos funcionales verificables al cliente al término de cada iteración. El AUP aplica técnicas ágiles incluyendo Desarrollo Dirigido por Pruebas (TDD), Modelado Ágil, Gestión de Cambios Ágil y Refactorización de Base de Datos para mejorar la productividad. (Blogger)</p>
+                        <p class="text-muted">El AUP abarca siete flujos de trabajo, cuatro de carácter ingenieril y tres de apoyo: Modelado, Implementación, Prueba, Despliegue, Gestión de Configuración, Gestión de Proyectos y Ambiente. El flujo de Modelado agrupa los tres primeros flujos de RUP —Modelamiento del negocio, Requerimientos, y Análisis y Diseño—, unificándolos en una sola disciplina. EcuRed</p>
+                        <p class="text-muted">Una ventaja clave que motivó la selección del AUP sobre otras metodologías ágiles como XP es que incluye explícitamente actividades y artefactos a los que la mayoría de desarrolladores ya están, de alguna manera, acostumbrados, constituyendo un proceso ágil que a la vez aporta la estructura que los gestores de proyecto requieren. Asimismo, el AUP prioriza la gestión de riesgos desde etapas tempranas: propone que aquellos elementos con alto riesgo obtengan prioridad en el proceso de desarrollo y sean abordados en etapas tempranas, para lo cual se crean y mantienen listas identificando los riesgos desde el inicio del proyecto. (ScribdBlogger)</p>
+                        <p class="text-muted">El AUP dispone de cuatro fases equivalentes a las de RUP: Incepción o Creación, Elaboración, Construcción y Transición. A continuación se describe cómo cada una de estas fases se adapta al contexto específico del presente proyecto.</p>
+                    </div>
+                </div>
+
+                <div id="fase-inicio" class="card border-0 shadow-sm mb-4" style="background: #fffaf5; border-left: 5px solid #f3a3b7;">
+                    <div class="card-body p-4">
+                        <h4 class="fw-bold" style="color: #5c3a21;">Fase de Inicio</h4>
+                        <p class="text-muted">El objetivo de la fase de Inicio es identificar el alcance inicial del proyecto, definir una arquitectura potencial para el sistema y obtener la aceptación por parte de las personas involucradas en el negocio. (Google Sites)</p>
+                        <p class="text-muted">En el contexto del presente proyecto, esta fase comprendió las siguientes actividades:</p>
+                        <ul class="text-muted">
+                            <li><strong>Levantamiento de requerimientos.</strong> Se realizaron reuniones con la propietaria y el personal operativo de las dos sucursales de la pastelería Florever para identificar los procesos actuales de registro de ventas, control de inventario y gestión de pedidos. A partir de estas sesiones se elaboraron las historias de usuario que sirvieron de base para la planificación del desarrollo.</li>
+                            <li><strong>Definición del alcance.</strong> Se delimitaron los módulos funcionales que formarían parte del sistema en su versión inicial: gestión de ventas, control de inventario de insumos, reportes consolidados por sucursal y administración de usuarios con roles diferenciados. Asimismo, se documentaron explícitamente las exclusiones, tales como la facturación electrónica oficial, el comercio en línea y la gestión avanzada de clientes (CRM).</li>
+                            <li><strong>Propuesta de arquitectura.</strong> Se definió la estructura tecnológica del sistema: una aplicación web con frontend desarrollado en HTML5, CSS3 y JavaScript, backend con APIs RESTful y una base de datos relacional centralizada (MySQL o PostgreSQL), accesible desde ambas sucursales mediante conexión a internet.</li>
+                            <li><strong>Identificación de riesgos.</strong> Se elaboró una lista preliminar de riesgos técnicos y operativos, entre los que destacan la resistencia al cambio por parte del personal habituado al registro manual, la dependencia de conectividad a internet para el funcionamiento en tiempo real y la curva de aprendizaje del sistema para usuarios sin formación técnica.</li>
+                        </ul>
+                        <p class="text-muted">Al concluir esta fase, el equipo contó con un documento de requerimientos validado, una arquitectura propuesta y el compromiso formal de los involucrados para continuar con el desarrollo.</p>
+                    </div>
+                </div>
+
+                <div id="fase-elaboracion" class="card border-0 shadow-sm mb-4" style="background: #fffaf5; border-left: 5px solid #f3a3b7;">
+                    <div class="card-body p-4">
+                        <h4 class="fw-bold" style="color: #5c3a21;">Fase de Elaboración</h4>
+                        <p class="text-muted">El objetivo de la fase de Elaboración es que el equipo de desarrollo profundice en la comprensión de los requisitos del sistema y valide la arquitectura propuesta. Blogger</p>
+                        <p class="text-muted">En esta fase el equipo ejecutó las siguientes actividades:</p>
+                        <ul class="text-muted">
+                            <li><strong>Refinamiento de requerimientos.</strong> Las historias de usuario obtenidas en la fase de inicio fueron depuradas y priorizadas según su valor para el negocio y su complejidad técnica. Se elaboraron los casos de uso correspondientes a los módulos de ventas, inventario y reportería, asegurando que el alcance funcional fuera claro y verificable.</li>
+                            <li><strong>Diseño de la arquitectura de datos.</strong> Se elaboró el modelo entidad-relación de la base de datos, definiendo las tablas principales (productos, categorías, insumos, ventas, movimientos de inventario, usuarios, roles y sucursales) y sus relaciones. El proceso AUP prevé el desarrollo de prototipos ejecutables durante la fase de Elaboración, donde se demuestre la validez de la arquitectura para los requisitos clave del producto y que determinen los riesgos técnicos. En consecuencia, se construyó un prototipo navegable de la interfaz de usuario que permitió validar el flujo de registro de ventas y el panel de administración con los usuarios clave. Scribd</li>
+                            <li><strong>Diseño de interfaces (mockups).</strong> Se diseñaron los prototipos visuales de las pantallas principales del sistema, prestando especial atención a la simplicidad y usabilidad, dado que los usuarios finales no cuentan con formación técnica avanzada.</li>
+                            <li><strong>Gestión de riesgos.</strong> La lista de riesgos elaborada en la fase de inicio fue revisada y actualizada, asignando probabilidades e impactos estimados a cada elemento e incorporando estrategias de mitigación concretas.</li>
+                        </ul>
+                        <p class="text-muted">Al finalizar esta fase, la arquitectura del sistema quedó validada y el equipo disponía de una línea base estable para iniciar el desarrollo incremental.</p>
+                    </div>
+                </div>
+
+                <div id="fase-construccion" class="card border-0 shadow-sm mb-4" style="background: #fffaf5; border-left: 5px solid #f3a3b7;">
+                    <div class="card-body p-4">
+                        <h4 class="fw-bold" style="color: #5c3a21;">Fase de Construcción</h4>
+                        <p class="text-muted">Durante la fase de Construcción el sistema es desarrollado y probado en su totalidad dentro del ambiente de desarrollo. Esta fase consiste en el desarrollo incremental del sistema, siguiendo las prioridades funcionales de los involucrados. (BloggerBlogger)</p>
+                        <p class="text-muted">El desarrollo se organizó en iteraciones semanales, cada una de las cuales produjo un incremento funcional del sistema. El orden de construcción de los módulos siguió la prioridad establecida con los usuarios:</p>
+                        <ul class="text-muted">
+                            <li><strong>Iteración 1 — Módulo de autenticación y gestión de usuarios.</strong> Se implementó el sistema de inicio de sesión con control de roles (administrador, cajero, encargado de almacén) y la gestión de permisos diferenciados por perfil y sucursal.</li>
+                            <li><strong>Iteración 2 — Módulo de ventas (punto de venta).</strong> Se desarrolló la funcionalidad de registro de transacciones, selección de productos del catálogo, aplicación de descuentos o promociones preconfiguradas, generación de comprobante de venta y cierre de turno de caja. El flujo fue optimizado para reducir el tiempo de atención al cliente.</li>
+                            <li><strong>Iteración 3 — Módulo de inventario de insumos.</strong> Se construyó el control de entradas y salidas de insumos, los ajustes de stock, las alertas configurables de stock mínimo y el registro de transferencias de inventario entre la sucursal de producción y el punto de venta al público.</li>
+                            <li><strong>Iteración 4 — Módulo de reportes y panel administrativo.</strong> Se implementaron los reportes de ventas diarias, semanales y mensuales por sucursal, los gráficos de productos más vendidos, el análisis de márgenes básicos por producto y las herramientas de configuración de precios y promociones.</li>
+                        </ul>
+                        <p class="text-muted">A lo largo de todas las iteraciones se aplicaron pruebas funcionales sobre cada incremento, corrigiéndose los errores detectados antes de avanzar a la siguiente iteración. Los equipos de AUP suelen ofrecer versiones de desarrollo al final de cada iteración en áreas de preproducción; una versión de desarrollo es algo que podría ser liberado en producción si se pone a través de los procesos de garantía de calidad, pruebas y despliegue. Blogger</p>
+                    </div>
+                </div>
+
+                <div id="fase-transicion" class="card border-0 shadow-sm mb-4" style="background: #fffaf5; border-left: 5px solid #f3a3b7;">
+                    <div class="card-body p-4">
+                        <h4 class="fw-bold" style="color: #5c3a21;">Fase de Transición</h4>
+                        <p class="text-muted">En la fase de Transición el sistema se lleva a los entornos de preproducción, donde se somete a pruebas de validación y aceptación, para finalmente ser desplegado en los sistemas de producción.( Blogger)</p>
+                        <p class="text-muted">Para el proyecto de la pastelería Florever, esta fase contempló las siguientes actividades:</p>
+                        <ul class="text-muted">
+                            <li><strong>Pruebas de aceptación con usuarios finales.</strong> El sistema fue presentado al personal operativo de ambas sucursales para realizar pruebas reales en condiciones simuladas de trabajo. Se registraron las observaciones del personal, se corrigieron los errores reportados y se ajustaron detalles de la interfaz.</li>
+                            <li><strong>Despliegue del sistema en producción.</strong> En la fase final del proyecto se lleva a cabo el despliegue del producto en el entorno de los usuarios, lo que incluye la capacitación del personal, principalmente. (MindMeister)</li>
+                            <li><strong>Documentación final.</strong> Se elaboró la documentación técnica del sistema (manual de instalación, diccionario de datos, descripción de la API) y la documentación de usuario (manuales por rol), garantizando que el negocio cuente con los recursos necesarios para la operación autónoma del sistema.</li>
+                            <li><strong>Evaluación post-despliegue.</strong> Se estableció un período de acompañamiento posterior al lanzamiento para verificar el correcto funcionamiento del sistema en condiciones reales de operación, atender consultas del personal y confirmar que los objetivos del proyecto fueron alcanzados.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 11. Metodologías -->
+                <div id="planificacion" class="card border-0 shadow-sm mb-4" style="background: #fffaf5; border-left: 5px solid #f3a3b7;">
+                    <div class="card-body p-4">
+                        <h4 class="fw-bold" style="color: #5c3a21;">Planificación por actividades</h4>
+                        <center><img src="../img/Planificacion.png" alt="Planificaion de problemas" class="img-fluid"></center>
+                        
+                    </div>
+                </div>
+
+            </main>
+        </div>
+    </div>
+
+    <footer class="text-white pt-4 mt-5" style="background-color: #362214; border-top: 4px solid #f3a3b7;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h6 style="color: #f3a3b7;">Pastelería Proyecto</h6>
+                    <p class="small text-white-50">Sistema de Gestión de Ventas e Inventarios desarrollado para la materia de Análisis y Diseño de Sistemas.</p>
+                </div>
+                <div class="col-md-4">
+                    <h6 style="color: #f3a3b7;">Contacto</h6>
+                    <p class="small text-white-50">Soporte técnico: tico@gmail.com</p>
+                </div>
+            </div>
+            <div class="text-center py-3 border-top border-secondary mt-3">
+                <p class="small mb-0 text-white-50">&copy; 2026 <b>Pastelería</b>. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
